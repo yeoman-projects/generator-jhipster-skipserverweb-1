@@ -1,0 +1,10 @@
+{
+  "generator-jhipster-blueprint": {
+    "promptValues": {
+      "githubName": "dmadunic",
+      "authorName": "Domagoj Madunić",
+      "authorEmail": "domagoj.madunic@gmail.com",
+      "authorUrl": ""
+    }
+  }
+}
