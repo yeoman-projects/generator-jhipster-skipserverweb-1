@@ -26,8 +26,7 @@ const serverFilesFiltered = {
             ]
         },
         {
-            condition: generator =>
-                generator.databaseType === 'sql' &&
+            condition: generator => generator.databaseType === 'sql' &&
                 (generator.fieldsContainOwnerManyToMany || generator.fieldsContainOwnerOneToOne || generator.fieldsContainManyToOne),
             path: SERVER_MAIN_RES_DIR,
             templates: [
