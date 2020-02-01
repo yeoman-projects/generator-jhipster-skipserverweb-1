@@ -1,10 +1,21 @@
 # generator-jhipster-skipserverweb
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> JHipster blueprint, Blueprint that allows java web layer to be skiped.
+> JHipster blueprint, Blueprint that allows for a Java web layer to be skiped during code generation.
 
 # Introduction
 
 This is a [JHipster](https://www.jhipster.tech/) blueprint, that is meant to be used in a JHipster application.
+
+This blueprint is intended for applications/projects that would like to take benefit from JHippster generator capabilities in creating Java JPA model, DTO's, JPA Repositories and Service layer, but **do not need** Controllers, Mappers and other components specific for Web applications.
+Example of this kind of application would be for example: Spring Shell CLI apps, or Java FX based Desktop applications.
+
+In short once installed this bluprint will skip the generation of all web components.
+
+**What this blueprint does not do at the moment.**
+Current version of the bluprint does not change build files: gradle.build or pom.xml. You still need to manually remove web dependencies you do not need from these!
+
+# Supported JHipster versiom
+Current version of the plugin is adjusted for JHipster version 6.3.1.
 
 # Prerequisites
 
@@ -44,7 +55,7 @@ yarn global upgrade generator-jhipster-skipserverweb
 
 # Usage
 
-To use this blueprint, run the below command
+To use this blueprint in your Jhipster project run the command bellow:
 
 ```bash
 jhipster --blueprint skipserverweb
